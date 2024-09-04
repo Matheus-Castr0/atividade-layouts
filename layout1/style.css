@@ -1,0 +1,94 @@
+:root{
+    --cinza-principal: #CCCCCC;
+    --vermelho-detalhe: #FF0000;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+#container{
+    width: 70%;
+}
+
+header{
+    height: 10vh;
+    background-color: var(--cinza-principal);
+}
+
+main{
+    display: flex;
+    margin-top: 20px;
+    gap: 4%;
+}
+
+#main-div{
+    width: 58%;
+    background-color: var(--cinza-principal);
+}
+
+aside{
+    width: 38%;
+}
+
+aside p{
+    margin: 20px 30px 20px 0;
+}
+
+#littles-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#littles-div div{
+    width: 25%;
+    height: 10vh;
+    background-color: var(--cinza-principal);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#medium-divs{
+    margin: 5.5% 0;
+    width: 100%;
+    display: flex;
+    gap: 10.5%;
+}
+
+#medium-divs .small-div{
+    background-color: var(--cinza-principal);
+    width: 30%;
+    height: 25vh;
+}
+
+#medium-divs .small-div div{
+    height: 100%;
+}
+
+#medium-divs .small-div h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#separator-div{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--cinza-principal);
+}
