@@ -1,0 +1,192 @@
+:root{
+    --cinza-principal: #CCCCCC;
+    --vermelho-detalhe: #FF0000;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+#container-main{
+    width: 70%;
+}
+
+header{
+    height: 10vh;
+    background-color: var(--cinza-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+}
+
+nav p{
+    margin: 0 15px;
+}
+
+main{
+    margin-right: 15px;
+}
+
+#historic{
+    display: flex;
+    gap: 3%;
+    margin: 15px 0 15px 0;
+}
+
+#historic div{
+    background-color: var(--cinza-principal);
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#report{
+    gap: 2%;
+    display: flex;
+    height: 60vh;
+}
+
+#recently{
+    width: 30%;
+    background-color: var(--cinza-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recently h2{
+    margin: 5px 0;
+}
+
+#recently > div{
+    width: 90%;
+    height: 2vh;
+    margin: 5px 0;
+    background-color: var(--vermelho-detalhe);
+}
+
+div#yellow{
+    height: fit-content;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 15px 0;
+}
+
+div#yellow div.mouth{
+    display: flex;
+    margin: 5px 0;
+    width: 90%;
+}
+
+div.mouth > div{
+    background-color: var(--vermelho-detalhe);
+    width: 70%;
+}
+
+div.mouth > p{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+div#yellow button{
+    width: 90%;
+    height: 5vh;
+    background-color: var(--vermelho-detalhe);
+    border: none;
+    margin: 5px 0 10px 0;
+}
+
+#list{
+    background-color: var(--cinza-principal);
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#list > div{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin: 0 15px;
+}
+
+div#icon{
+    width: 5.5%;
+    height: 100%;
+    background-color: var(--vermelho-detalhe);
+    border-radius: 50%;
+}
+
+div#first,
+div#third{
+    height: 50%;
+    width: 15%;
+    background-color: var(--vermelho-detalhe);
+}
+
+div#second{
+    height: 50%;
+    width: 60%;
+    background-color: var(--vermelho-detalhe);
+}
+
+div#container-aside{
+    width: 100%;
+    background-color: var(--cinza-principal);
+}
+
+div#container-aside div#logout{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#container-aside div#logout > div{
+    width: 30px;
+    height: 30px;
+    background-color: var(--vermelho-detalhe);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+div#another-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#another-list div:first-child,
+div#another-list div{
+    width: 90%;
+    background-color: var(--vermelho-detalhe);
+    margin: 15px 0;
+}
+
+div#another-list div:first-child{
+    height: 15vh;
+}
+
+div#another-list div{
+    height: 3vh;
+}
